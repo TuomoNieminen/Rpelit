@@ -1,0 +1,30 @@
+---
+title: "Untitled"
+output: 
+  pdf_document:
+      includes:
+        after_body: footer.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Tilastointipeli!
+
+Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattaa satunnaisuuden maailmaan nopanheiton avulla. Tilastointipeli opettaa, että lopputulos ei aina ole tiedossa etukäteen.
+
+### Ohjeet
+
+**Pelivälineet**:  Kuusisivuinen noppa, pelikuva.
+
+**Pelin kulku**. Heitä noppaa. Väritä pelikuvasta silmälukua vastaava alin värittämätön pallo. Peli loppuu, kun minkä tahansa silmäluvun kaikki pallot on väritetty. Kyseinen silmäluku on pelin voittaja!
+
+
+### Pelikuva
+
+```{r}
+source(here::here("tilastointipeli/piirra_kuva.R"))
+piirra_kuva()
+```

@@ -1,30 +1,44 @@
 ---
-title: "Untitled"
-output: 
-  pdf_document:
-      includes:
-        after_body: footer.tex
+title: "Tilastointipeli!"
+output: pdf_document
+geometry: "top=0cm"
 ---
 
+\pagenumbering{gobble}
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+source(here::here("tilastointipeli/piirra_kuva.R"))
 ```
 
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
 
-## Tilastointipeli!
-
-Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattaa satunnaisuuden maailmaan nopanheiton avulla. Tilastointipeli opettaa, että lopputulos ei aina ole tiedossa etukäteen.
+Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattelee nopanheiton kautta satunnaisuuden ja empiirisen tieteen maailmaan. 
 
 ### Ohjeet
 
-**Pelivälineet**:  Kuusisivuinen noppa, pelikuva.
+- **Pelivälineet**:  Kuusisivuinen noppa, kynä, pelikuva.  
+- **Pelin kulku**. Heitä noppaa. Väritä pelikuvasta silmälukua vastaava alin värittämätön pallo. Peli loppuu, kun minkä tahansa silmäluvun kaikki pallot on väritetty. Kyseinen silmäluku on pelin voittaja!
 
-**Pelin kulku**. Heitä noppaa. Väritä pelikuvasta silmälukua vastaava alin värittämätön pallo. Peli loppuu, kun minkä tahansa silmäluvun kaikki pallot on väritetty. Kyseinen silmäluku on pelin voittaja!
-
-
-### Pelikuva
+## Peli
 
 ```{r}
-source(here::here("tilastointipeli/piirra_kuva.R"))
 piirra_kuva()
 ```
+
+
+\blfootnote{
+
+
+Yksi tilastointipeli kestää keskimäärin 20 nopanheittoa. Peli loppuu hyvin todennäköisesti ennen 26. heittoa (95\% todennäköisyys), mutta saattaa loppua jo ennen 12. heittoa (5\% todennäköisyys).
+
+Nopanheitossa kaikki silmäluvut ovat yhtä todennäköisiä. Matemaattisesti tilastointipelissä eri silmäluvut ovatkin \italic{tasaisesti jakaantuneita}. Jos yksittäistä tilastointipeliä jatkettaisiin hyvin pitkään, olisi kaikkien silmälukujen kohdalla lopulta suunnilleen yhtä monta väritettyä palloa. Tästä huolimatta tilastointipelissä saatetaan nähdä ylivoimaisiakin voittoja, sillä pienemmällä heittomäärällä silmälukujen tasainen jakauma ei välttämättä toteudu.
+
+Suunnittelu ja toteutus: Tuomo Nieminen 2021 (tuomo.a.nieminen@gmail.com).
+
+}

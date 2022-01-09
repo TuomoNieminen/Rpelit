@@ -1,3 +1,5 @@
+library(dplyr, quiet = TRUE)
+
 heita_noppaa <- function(nopan_silmaluku = 6, heittoja = 1) {
   sample(1:nopan_silmaluku, size = heittoja, replace = TRUE)
 }
@@ -34,3 +36,8 @@ tulokset_max9 <- pelaa_peleja(maksimi_lukumaara =9)
 tulokset_max8 <- pelaa_peleja(maksimi_lukumaara = 8)
 tulokset_max7 <- pelaa_peleja(maksimi_lukumaara = 7)
 tulokset_max6 <- pelaa_peleja(maksimi_lukumaara = 6)
+tulokset_max5 <- pelaa_peleja(maksimi_lukumaara = 5)
+
+
+tulokset_max6 %>% quantile(p = c(0.05, 0.5, 0.95))
+tulokset_max5 %>% quantile(p = c(0.05, 0.5, 0.95))

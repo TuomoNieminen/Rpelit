@@ -40,5 +40,5 @@ Yksi tilastointipeli kestää keskimäärin 20 nopanheittoa. Peli loppuu hyvin t
 Nopanheitossa kaikki silmäluvut ovat yhtä todennäköisiä. Matemaattisesti tilastointipelissä eri silmäluvut ovatkin \italic{tasaisesti jakaantuneita}. Jos yksittäistä tilastointipeliä jatkettaisiin hyvin pitkään, olisi kaikkien silmälukujen kohdalla lopulta suunnilleen yhtä monta väritettyä palloa. Tästä huolimatta tilastointipelissä saatetaan nähdä ylivoimaisiakin voittoja, sillä pienemmällä heittomäärällä silmälukujen tasainen jakauma ei välttämättä toteudu.
 
 Suunnittelu ja toteutus: Tuomo Nieminen 2021 (tuomo.a.nieminen@gmail.com).
-
+Koodit: 
 }

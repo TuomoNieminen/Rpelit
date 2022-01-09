@@ -1,3 +1,7 @@
+# Tässä tutkitaan simulaatiolla tilastointipelin kestoa
+# erilaisilla valinnoilla 
+# Tuomo Nieminen 12/2021
+
 library(dplyr, quiet = TRUE)
 
 heita_noppaa <- function(nopan_silmaluku = 6, heittoja = 1) {

@@ -37,8 +37,8 @@ piirra_kuva()
 
 Yksi tilastointipeli kestää keskimäärin 20 nopanheittoa. Peli loppuu hyvin todennäköisesti ennen 26. heittoa (95\% todennäköisyys), mutta saattaa loppua jo ennen 12. heittoa (5\% todennäköisyys).
 
-Nopanheitossa kaikki silmäluvut ovat yhtä todennäköisiä. Matemaattisesti tilastointipelissä eri silmäluvut ovatkin \italic{tasaisesti jakaantuneita}. Jos yksittäistä tilastointipeliä jatkettaisiin hyvin pitkään, olisi kaikkien silmälukujen kohdalla lopulta suunnilleen yhtä monta väritettyä palloa. Tästä huolimatta tilastointipelissä saatetaan nähdä ylivoimaisiakin voittoja, sillä pienemmällä heittomäärällä silmälukujen tasainen jakauma ei välttämättä toteudu.
+Nopanheitossa kaikki silmäluvut ovat yhtä todennäköisiä. Matemaattisesti tilastointipelissä eri silmäluvut ovatkin \emph{tasaisesti jakaantuneita}. Jos yksittäistä tilastointipeliä jatkettaisiin hyvin pitkään, olisi kaikkien silmälukujen kohdalla lopulta suunnilleen yhtä monta väritettyä palloa. Tästä huolimatta tilastointipelissä saatetaan nähdä ylivoimaisiakin voittoja, sillä pienemmällä heittomäärällä silmälukujen tasainen jakauma ei välttämättä toteudu.
 
 Suunnittelu ja toteutus: Tuomo Nieminen 2021 (tuomo.a.nieminen@gmail.com).
-Koodit: 
+Koodit: \url{https://github.com/TuomoNieminen/Rpelit/tree/master/tilastointipeli}
 }

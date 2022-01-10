@@ -28,7 +28,7 @@ Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattelee 
 ## Peli
 
 ```{r}
-piirra_kuva()
+piirra_kuva(point_size = 11)
 ```
 
 

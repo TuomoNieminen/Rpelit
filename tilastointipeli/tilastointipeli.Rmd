@@ -18,7 +18,7 @@ source(here::here("tilastointipeli/piirra_kuva.R"))
   \endgroup
 }
 
-Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattelee nopanheiton kautta satunnaisuuden ja empiirisen tieteen maailmaan. 
+Tilastointipeli on hauska peli perheen pienemmille. Tilastointipeli johdattelee satunnaisuuden ja empiirisen tieteen maailmaan nopanheiton kautta.
 
 ### Ohjeet
 

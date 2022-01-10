@@ -1,6 +1,4 @@
-library(ggplot2)
-library(cowplot)
-library(magick)
+source(here::here("tilastointipeli/global.R"))
 
 #'
 #' @examples
